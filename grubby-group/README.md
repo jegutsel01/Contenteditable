@@ -7,6 +7,12 @@ A print media stylesheet will need to hide features not desired in printouts.
   About the author.
   ## Requirements
   Requirements for viewing the repository output.
+  ### clone this repository
+  - Use http for quickest results
+  - open your CLI and type npm install so you can catch up with all of the changes you need
+  - type npm run dev to run in development/debugging mode.
+  - Type npm run build to build out the pages of the site in your dist directory.
+  
   ## Comments
   Send comments and suggestions to whomever@wherever.org
 
