@@ -1,6 +1,7 @@
 ---
 import Header from "../components/header.astro";
 import Footer from "../components/footer.astro";
+import MainNav from "../components/mainnav.astro";
 
 
 interface Props {
@@ -22,9 +23,13 @@ const { title } = Astro.props;
 	</head>
 	<body>
 <Header/>
+<MainNav/>
+
 	<main>
 
+	
 		<slot />
+<!-- the above is where Astro "slots in" content from the relevant pages under the src/pages .astro files -->
 
 		</main>
 		<Footer/>
