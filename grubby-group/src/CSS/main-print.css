@@ -1,0 +1,42 @@
+﻿@page {
+    size: 8.5in 11in portrait;
+    margin: 0;  /* the value "0"  usually hides headers and footers in the printout */
+    }
+  
+
+    html {
+        font-size: 12pt;
+      }
+    
+      body {
+        margin: 0; /* in some types of printouts, this needs to be a real number */
+        padding: 0;
+      }
+    
+      main {
+        margin: 0;
+        padding: 0;
+      }
+    
+      /* hide everything except the form */
+      header, footer, article, #root-heading, output, .input-label {
+        display: none;
+      }
+    
+      .input-groups {
+        margin: 0.4in;
+        padding: 0;
+        border: 0;
+        background-color: #EFEFEF; /* may be changed when user selects  a print theme */
+        overflow-y: hidden;
+    }    
+
+    .input-block{
+      margin: 12pt 0 1pt 0;   /* many of these values may change according to the print theme selected */
+      padding: 0;
+      border: 0;
+      text-align: center;
+      caret-color: transparent;
+      background-color: white;
+  }
+
