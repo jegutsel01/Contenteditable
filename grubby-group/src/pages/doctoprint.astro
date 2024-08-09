@@ -1,79 +1,9 @@
-﻿         <!DOCTYPE html >
-<html lang="en">
-<head>
-    <meta charset="utf-8" >
-    <title>printable web templates</title>
-    <meta name="classification" content="internet" >
-    <meta name="web_copy_date" content="07-24-2024" >
-    <meta name="robots" content="index, follow" >
-    <meta name="viewport" content="width=device-width, initial-scale=1" >
-    <link href="main-screen.css" rel="stylesheet" media="screen" >
-    <link href="main-print.css" rel="stylesheet" media="Print" >
-    </head>
-<body>
-    
-    <header>
-    </header>
-    <main>
-    <article>
-        <h1>
-Standard techniques to use with contenteditable attribute in accessible pages
-        </h1>
-        <p>
-        We will need a screen media stylesheet that indicates where elements support data entry and a print media stylesheet that hides featues not desirable in printouts.    
-        </p>
-        <P>
-            I have tried a number of combinations of attributes. I think the first two ideas have the most promise.
-        </P>
-        <p>
-            <a href="#">before test</a>
-        </p>
-        </article>
-        <div id="editable-root" aria-labelledby="root-heading">
-            <h2 id="root-heading">
-Form editor
-            </h2>
-            <section id="input-group1" class="input-groups">
-                <output id="input-live"></output>
-                <div id="input-heading1-label" class="input-label">
-                    Enter cover main text
-                </div>
-                <h3 class="input-block" contenteditable="true" role="textbox" aria-multiline="true" aria-label="heading" aria-describedby="input-heading1-label">
-                </h3>
-                
-                    <div id="input-para1-label" class="input-label">
-                        Enter body text
-                        </div>
-<p class="input-block" contenteditable="true" role="textbox" aria-multiline="true" aria-label="paragraph" aria-describedby="input-para1-label">
-</p>
-                </section>
+﻿---         
+import Layout from '../layouts/Layout.astro';
+---
 
-                <section id="input-group2" class="input-groups">
-                    <h3>
-                        Two
-                    </h3>
-    <p>
-        <span contenteditable="true" tabindex="0" role="textbox" aria-multiline="true" aria-label="paragraph">
-        </span>
-    </p>
-    <h3>
-        Three
-    </h3>
-                        <div contenteditable="true" role="textbox" aria-multiline="true" aria-label="paragraph">
-        <p>
-        </p>
-                        </div>
-                
-                </section>
-        
-        </div>
-        <article>
-        <p>
-        </article>
-            <a href="#">after test</a>
-        </p>
-    </main>
-    <footer>
-    </footer>
-</body>
-</html>
+<Layout title="Doctoprint | Content Editable Tests.">
+<p>A paragraph  
+
+</p>
+</Layout>

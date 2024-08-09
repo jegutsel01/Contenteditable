@@ -1,9 +1,11 @@
 ---
-import Header from "../components/header.astro";
-import Footer from "../components/footer.astro";
-import MainNav from "../components/mainnav.astro";
 import SkipLink from "../components/skiplink.astro";
-
+import MainNav from "../components/MainNav.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import Card from '../components/Card.astro';
+import "../CSS/main-print.css";
+import "../CSS/main-screen.css";
 
 interface Props {
 	title: string;
@@ -23,11 +25,14 @@ const { title } = Astro.props;
 		<title>{title}</title>
 	</head>
 	<body>
-<SkipLink/>
-<Header/>
-<MainNav/>
 
-	<main id="main-content">
+<header>
+<SkipLink/>
+	<Header title="Explorations of the contenteditable attribute"/>
+<MainNav/>
+</header>
+
+<main id="main-content">
 
 	
 		<slot />
@@ -35,7 +40,9 @@ const { title } = Astro.props;
 
 
 		</main>
+		<footer aria-label="main footer">
 		<Footer/>
+		</footer>
 		
 	</body>
 </html>
