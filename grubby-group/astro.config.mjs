@@ -5,10 +5,10 @@ export default defineConfig({
     build: {
 		format: "file",
 	},
-	{
-	site: 'https://jegutsel01.github.io'
-	}
-	{
+	
+	site: 'https://jegutsel01.github.io',
+
+
 	base: '/contenteditable'
-	}
+	
 });
