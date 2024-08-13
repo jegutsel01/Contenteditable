@@ -6,7 +6,7 @@ import Card from '../components/Card.astro';
 <Layout title="Home | Content Editable Tests.">
 	<!-- where the main element starts -->
 		<h1>Welcome to <span class="text-gradient">Content Editable Tests</span></h1>
-		<h2>MDN definition
+		<h2>MDN definition</h2>
 		<p>
 		<a href="mozilla.org/en-US/docs/Web/HTML/Global_attributes/contenteditable">Explore</a>
 </p>
@@ -21,43 +21,12 @@ import Card from '../components/Card.astro';
 <cite contenteditable="true">-- Write your own name here</cite>
 
 <h3>Details</h3>
-Looks like the designMode attribute might be a key to success? Lot's of things to research below.
-Look at https://html.spec.whatwg.org/multipage/interaction.html#contenteditable for greater detail:
-
-6.8.1 Making document regions editable: The
-same page link contenteditable
-content attribute
-§
-visited heading level 4 same page link
-6.8.2 Making entire documents editable: the
-same page link designMode
-getter and setter
-§
-heading level 4 same page link
-6.8.3 Best practices for in-page editors
-§
-heading level 4 same page link
-6.8.4 Editing APIs
-§
-heading level 4 same page link
-heading level 4 same page link §
-An editing host is either an
-Link HTML element
-with its
-same page link contenteditable
-attribute in the true state or plaintext-only state, or a
-Link child
-Link HTML element
-of a
-Link Document
-whose
-same page link design mode enabled
-is true.
-The definition of the terms
-6.8.5 Spelling and grammar checking
-§
-heading level 4 same page link...
-
+<p>Looks like the designMode attribute might be a key to success? Lot's of things to research below.
+Look at <a href="https://html.spec.whatwg.org/multipage/interaction.html#contenteditable">A third party opinion</a> for more detail:
+</p>
+<p>
+An editing host is either an HTML element with its contenteditable attribute in the true state or plaintext-only state, or a child HTML element of a Document whose design mode enabled is true.
+</p>
 
 <!-- </main> commenting out the "main element" so that it's not duplicated in the DOM. It's defined in the layout.astro file -->
 
